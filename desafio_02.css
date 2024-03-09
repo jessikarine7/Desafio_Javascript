@@ -5,19 +5,19 @@
 @font-face {
   font-family: 'poppinsB';
   src: url('fonts/Poppins-Bold.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'poppinsR';
   src: url('fonts/Poppins-Regular.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'poppinsL';
   src: url('fonts/Poppins-Light.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: lighter;
   font-style: normal;
 }
 
@@ -60,7 +60,6 @@
 .spanHome:hover{
   text-decoration: underline;
 }
-
 @media (max-width:500px) {
   .menu{
     flex-wrap: wrap;
@@ -71,4 +70,104 @@
   }
 }
 
-/* ------------------ Menu ---------------- */
+/* ------------------ Title ---------------- */
+.container{
+  background-color: rgb(241, 241, 241);
+  flex-grow: 1;
+  height: 100vh;
+}
+.titleContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 30px 15px 30px;
+}
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+}
+.label{
+  font-family: poppinsB;
+  font-size: 12px;
+  margin-top: 30px;
+}
+.input{
+  padding: 10px;
+  min-width: 50%;
+  border-radius: 5px;
+  border: 1px solid rgb(190, 190, 190);
+}
+.title{
+  font-family: poppinsB;
+  font-size: 22px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+@media (max-width:500px) {
+  .inputContainer{
+    margin-top: 15px;
+  }
+  .titleContainer{
+    flex-wrap: wrap;
+  }
+  .container{
+    height: 82vh;
+  }
+  .inputContainer {
+    margin-top: 0px;
+  }
+  .title{
+    margin-top: 15px;
+  }
+  .label{
+    margin-top: 5px;
+  }
+}
+
+/* ------------------ List ---------------- */
+.listContainer{
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgb(235, 235, 235);
+  border-radius: 5px;
+  margin: 0px 30px 30px 30px;
+  height: 45vh;
+  padding: 20px;
+}
+.tableContainer{
+  width: 100%;
+}
+.heard{
+  background-color: rgb(231, 231, 231);
+  text-align: start;
+  padding: 10px;
+  font-family: poppinsR;
+}
+.items{
+  margin: 25px;
+  font-family: poppinsR;
+  border: 1px solid rgb(190, 190, 190);
+}
+.item{
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
+}
+.iconTabel{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 15px;
+}
+.icon{
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+.icon:hover{
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+  border: none;
+}
+
+/* -------------------- */
+

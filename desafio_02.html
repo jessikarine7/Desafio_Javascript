@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="desafio_02.css">
   <title>Desafio 2</title>
 </head>
+
 <body>
   <nav class="menu">
     <ul class="menuTitle">
@@ -18,5 +19,83 @@
       <button class="btn">ENTRAR</button>
     </ul>
   </nav>
+
+  <div class="container">
+    <div class="titleContainer">
+      <h1 class="title">Listagem de motoboys cadastrados</h1>
+      <ul class="inputContainer">
+        <label class="label">Pesquisar</label>
+        <input type="text" class="input" label="aaa">
+      </ul>
+    </div>
+  
+    <div class="listContainer">
+      <table class="tableContainer">
+        <tr class="heards">
+          <th class="heard">ID</th>
+          <th class="heard">NOME</th>
+          <th class="heard">AÇÕES</th>
+        </tr>
+  
+        <tr class="items">
+          <td class="item">01</td>
+          <td class="item" style="min-width:40px">Usuário Teste 01 </td>
+          <td class="item iconTabel">
+            <button class="icon" id="openModalView">
+              <img alt="modal visualizar" src="icons/olho.png" width="25">
+            </button>
+
+            <button class="icon" id="openModalEdit">
+              <img src="icons/lapis.png" width="25">
+            </button>
+
+            <button class="icon" id="openModalDelete">
+              <img  src="icons/lixeira.png" width="25">
+            </button>
+          </td>
+        </tr>
+
+        <!-- <tr class="items">
+          <td class="item">02</td>
+          <td class="item">Usuário Teste 02</td>
+          <td class="item iconTabel">
+            <button class="icon"  id="openModal" >
+
+              <img src="icons/olho.png" width="25">
+            </button>
+            <img class="icon" src="icons/lapis.png" width="25">
+            <img class="icon" src="icons/lixeira.png" width="25">
+          </td>
+        </tr> -->
+      </table>     
+    </div>
+    
+    <div id="modalView" class="modal">
+      <div class="modal-conteudo">
+          <span class="close">&times;</span>
+          <p class="modalTitle">Visualizar Usuários</p>
+          
+          <label>Nome</label>
+          <input type="text">
+      </div>
+    </div>
+
+    <div id="modalEdit" class="modal">
+      <div class="modal-conteudo">
+          <span class="close">&times;</span>
+          <p class="modalTitle">editar</p>
+      </div>
+    </div>
+
+    <div id="modalDelete" class="modal">
+      <div class="modal-conteudo">
+          <span class="close">&times;</span>
+          <p class="modalTitle">deletar</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="modalFunctions.js"></script>
+
 </body>
 </html>
