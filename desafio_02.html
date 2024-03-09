@@ -24,7 +24,7 @@
     <div class="titleContainer">
       <h1 class="title">Listagem de motoboys cadastrados</h1>
       <ul class="inputContainer">
-        <label class="label">Pesquisar</label>
+        <label class="label">Pesquisar por nome</label>
         <input type="text" class="input" label="aaa">
       </ul>
     </div>
@@ -39,63 +39,199 @@
   
         <tr class="items">
           <td class="item">01</td>
-          <td class="item" style="min-width:40px">Usuário Teste 01 </td>
+          <td class="item">Usuário Teste 01</td>
           <td class="item iconTabel">
-            <button class="icon" id="openModalView">
-              <img alt="modal visualizar" src="icons/olho.png" width="25">
+            <button 
+              class="icon" 
+              id="openModalView"
+            >
+              <img 
+                alt="modal visualizar" 
+                src="icons/olho.png" 
+                width="25"
+              >
             </button>
 
-            <button class="icon" id="openModalEdit">
-              <img src="icons/lapis.png" width="25">
+            <button 
+              class="icon" 
+              id="openModalEdit"
+            >
+              <img 
+                src="icons/lapis.png" 
+                width="25"
+              >
             </button>
 
-            <button class="icon" id="openModalDelete">
-              <img  src="icons/lixeira.png" width="25">
+            <button 
+              class="icon" 
+              id="openModalDelete"
+            >
+              <img 
+                src="icons/lixeira.png" 
+                width="25"
+              >
             </button>
           </td>
         </tr>
-
-        <!-- <tr class="items">
-          <td class="item">02</td>
-          <td class="item">Usuário Teste 02</td>
-          <td class="item iconTabel">
-            <button class="icon"  id="openModal" >
-
-              <img src="icons/olho.png" width="25">
-            </button>
-            <img class="icon" src="icons/lapis.png" width="25">
-            <img class="icon" src="icons/lixeira.png" width="25">
-          </td>
-        </tr> -->
       </table>     
     </div>
     
     <div id="modalView" class="modal">
       <div class="modal-conteudo">
-          <span class="close">&times;</span>
-          <p class="modalTitle">Visualizar Usuários</p>
-          
-          <label>Nome</label>
-          <input type="text">
+        <span class="close">&times;</span>
+        <p class="modalTitle">
+          Visualizar Usuários
+        </p>
+
+        <form class="form">
+          <div class="cardModal">
+            <label class="labelmodal">
+              Nome Completo
+            </label>
+
+            <p class="textCard">
+              Usuário Teste 01
+            </p>
+          </div>
+
+          <div class="cardModal">
+            <label class="labelmodal">
+              Placa Veículo
+            </label>
+
+            <p class="textCard">
+              MVT0066
+            </p>
+          </div>
+                
+          <div class="cardModal">
+            <label class="labelmodal">
+              Telefone
+            </label>
+
+            <p class="textCard">
+              (97) 2805-5679
+            </p>
+          </div>
+            
+          <div class="cardModal">
+            <label class="labelmodal">
+              Email
+            </label>
+
+            <p class="textCard">
+              usuarioteste1@gmail.com
+            </p>
+          </div>
+        </form>
+
+        <div class="buttonContainerModal">
+          <button class="btnModal cancel">
+            Sair
+          </button>
+        </div>
       </div>
     </div>
 
     <div id="modalEdit" class="modal">
       <div class="modal-conteudo">
-          <span class="close">&times;</span>
-          <p class="modalTitle">editar</p>
+        <span class="close">&times;</span>
+        <p class="modalTitle">
+          Visualizar Usuários
+        </p>
+
+        <form class="form">
+          <label class="labelmodal">
+            Nome Completo
+          </label>
+          <input 
+            class="inputModal"
+            type="text" 
+            placeholder="Usuário Teste 01"
+          >
+          <span class="spanInput">
+            Informe seu nome completo, sem acento
+          </span>
+ 
+          <label class="labelmodal">
+            Placa Veículo
+          </label>
+          <input  
+            class="inputModal" 
+            type="text" 
+            placeholder="MVT0066"
+          >
+          <span class="spanInput">
+            Informe a placa do veículo sem caracteres especiais
+          </span>
+                
+          <label class="labelmodal">
+            Telefone
+          </label>
+          <input 
+            class="inputModal" 
+            type="text" 
+            placeholder="(97) 2805-5679"
+          >
+          <span class="spanInput">
+            Informe seu telefone com o ddd
+          </span>
+         
+          <label class="labelmodal">
+            Email
+          </label>
+          <input 
+            class="inputModal" 
+            type="text" 
+            placeholder="usuarioteste1@gmail.com"
+          >
+          <span class="spanInput">
+            Informe seu email mais utilizado
+          </span>  
+        </form>
+
+        <div class="buttonContainerModal">
+          <button class="btnModal btnModalCancel cancel">
+            Cancelar
+          </button>
+
+          <button class="btnModal">
+            Confirmar
+          </button>
+        </div>
       </div>
     </div>
 
     <div id="modalDelete" class="modal">
       <div class="modal-conteudo">
-          <span class="close">&times;</span>
-          <p class="modalTitle">deletar</p>
+        <span class="close">&times;</span>
+        <div class="iconAlert">
+          <img 
+            src="icons/alert.png" 
+            width="45"
+          >
+        </div>
+
+        <p 
+          class="modalTitle" 
+          style="margin-bottom: 20px;"
+        >
+          Tem certeza que deseja cancelar?
+        </p>
+
+        <div class="buttonContainerModal">
+          <button class="btnModal btnModalCancel cancel">
+            Cancelar
+          </button>
+
+          <button class="btnModal">
+            Confirmar
+          </button>
+        </div>
       </div>
     </div>
   </div>
 
   <script src="modalFunctions.js"></script>
-
 </body>
 </html>

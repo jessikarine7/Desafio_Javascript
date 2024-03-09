@@ -155,6 +155,7 @@
 .iconTabel{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
   padding: 15px;
 }
@@ -169,5 +170,104 @@
   border: none;
 }
 
-/* -------------------- */
-
+/* ------------------ Modal ---------------- */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0, 0, 0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+.modal-conteudo {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; 
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modalTitle{
+  font-family: poppinsB;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+.inputs{
+  padding-bottom: 50px;
+}
+.spanInput{
+  text-align: end;
+  color:rgb(182, 182, 182);
+  margin-bottom: 5px;
+}
+.inputModal{
+  height: 35px;
+}
+.labelmodal{
+  font-family: poppinsB;
+  font-size: 14px;
+}
+.btnModal{
+  border: none;
+  background-color: #008080;
+  font-family: poppinsR;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+  width: 90px;
+  margin-top: 5px;
+}
+.buttonContainerModal{
+  display: flex;
+  justify-content:center ;
+  gap: 20px;
+}
+.btnModalCancel{
+  background-color:rgb(231, 231, 231);
+  color: #008080;
+}
+.btnModal:hover{
+  background-color: #02a7a7f5
+}
+.btnModalCancel:hover{
+  background-color:rgb(214, 213, 213);
+}
+.cardModal{
+  font-family: poppinsR;
+  background-color:rgb(231, 231, 231);
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 15px;
+}
+.textCard{
+  font-family: poppinsR;
+}
+.iconAlert{
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width:500px) {
+  .modal-conteudo{
+    width: 75%; 
+  }
+}

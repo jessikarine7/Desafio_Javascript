@@ -16,7 +16,7 @@ const users = [
   { name: 'usuario 4', age: 40 , email: 'usuario4@gmail.com' },
 ];
 
-searchUser(users, 50)
+searchUser(users, 30)
   .then((result) => {
     console.log('Usuário encontrado:', result);
   })
